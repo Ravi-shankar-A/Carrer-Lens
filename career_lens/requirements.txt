@@ -1,0 +1,25 @@
+# Career Lens - Dependencies
+# Core Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+
+# Database (optional - uses in-memory storage by default)
+motor>=3.3.0  # MongoDB async driver
+
+# NLP / AI (optional - falls back to keyword matching)
+sentence-transformers>=2.2.0  # For semantic similarity
+# spacy>=3.7.0  # Alternative NLP (uncomment if needed)
+
+# PDF Processing (for resume analysis)
+pdfplumber>=0.10.0
+# PyPDF2>=3.0.0  # Alternative PDF parser
+
+# Utilities
+python-multipart>=0.0.6  # For file uploads
+python-dotenv>=1.0.0  # Environment variables
+
+# Development
+httpx>=0.25.0  # For testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
